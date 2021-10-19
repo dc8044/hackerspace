@@ -261,3 +261,19 @@ textarea {
   }
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: 'HACKED';
+  src: url("/fonts/HACKED.ttf");
+}
+
+@font-face {
+  font-family: 'Hack';
+  src:
+    url("/fonts/Hack-Bold.ttf"),
+    url("/fonts/Hack-Bold.ttf"),
+    url("/fonts/Hack-Bolditalic.ttf"),
+    url("/fonts/Hack-Italic.ttf"),
+    url("/fonts/Hack-Regular.ttf");
+}
