@@ -365,3 +365,12 @@ textarea {
 #links ul li a:hover {
   background: #eee;
 }
+
+#partners {
+  text-align: center;
+  margin-top: 70px;
+}
+
+#partners img {
+  margin: 10px;
+}
