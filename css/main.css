@@ -296,17 +296,29 @@ textarea {
 }
 
 #container {
-  padding: 40px;
-  margin: 0 auto;
-  max-width: 340px;
+  margin: 0 auto 50px auto;
+  padding: 0 10px;
+  max-width: 350px;
+}
+
+#header {
+  margin: 70px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    text-align: center;
+  }
 }
 
 #header h1 {
+  display: block;
+  margin: 0px;
   font-family: 'HACKED';
   font-size: 46px;
   text-shadow:
     -4px -4px 0 #f0f,
-    4px 4px 0 #0ff;
+    2px 2px 0 #0ff;
 }
 
 .map-wrapper {
