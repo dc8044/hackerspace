@@ -309,9 +309,19 @@ textarea {
     4px 4px 0 #0ff;
 }
 
+.map-wrapper {
+  overflow-y: hidden;
+}
+
+#map-address {
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
 #map {
   filter: invert(1) grayscale(1);
   width: 100%;
-  height: 200px;
+  height: 250px;
   border: 0;
 }

@@ -19,6 +19,11 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap&v=weekly"
+    async
+  ></script>
 </head>
 
 <body>
@@ -29,6 +34,10 @@
     <div id="header">
       <h1>BLKT SPACE</h1>
       <p>Community-operated physical place, where people can meet and work on their projects.</p>
+    </div>
+    <div class="map-wrapper">
+      <div id="map"></div>
+      <div id="map-address">Ukraine, Kiev, Dorohozhytska St. 3</div>
     </div>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
