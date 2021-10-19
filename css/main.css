@@ -284,7 +284,13 @@ textarea {
 
 #covid-warning {
   color: #000;
-  background: #42FF00;
+  background:
+    #42FF00
+    repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 20px,
+      transparent 20px, transparent 40px
+    );
   padding: 10px;
   text-align: center;
 }
