@@ -318,7 +318,7 @@ textarea {
   font-size: 46px;
   text-shadow:
     -4px -4px 0 #f0f,
-    2px 2px 0 #0ff;
+    4px 4px 0 #0ff;
 }
 
 .map-wrapper {
@@ -338,11 +338,9 @@ textarea {
   border: 0;
 }
 
-
 #links {
-  margin-top: 100px;
+  margin-top: 70px;
   width: 100%;
-  background: linear-gradient();
 }
 
 #links ul {
