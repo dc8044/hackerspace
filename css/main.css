@@ -12,8 +12,10 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
+  background: #000000;
+  color: #fff;
+  font-family: 'Hack', serif;
+  font-size: 12px;
   line-height: 1.4;
 }
 
@@ -265,15 +267,45 @@ textarea {
 
 @font-face {
   font-family: 'HACKED';
-  src: url("/fonts/HACKED.ttf");
+  src: url("../fonts/HACKED.ttf");
 }
 
 @font-face {
   font-family: 'Hack';
   src:
-    url("/fonts/Hack-Bold.ttf"),
-    url("/fonts/Hack-Bold.ttf"),
-    url("/fonts/Hack-Bolditalic.ttf"),
-    url("/fonts/Hack-Italic.ttf"),
-    url("/fonts/Hack-Regular.ttf");
+    url("../fonts/Hack-Regular.ttf"),
+    url("../fonts/Hack-Bold.ttf"),
+    url("../fonts/Hack-Bolditalic.ttf"),
+    url("../fonts/Hack-Italic.ttf");
+}
+
+
+/* Main styles */
+
+#covid-warning {
+  color: #000;
+  background: #42FF00;
+  padding: 10px;
+  text-align: center;
+}
+
+#container {
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+#header h1 {
+  font-family: 'HACKED';
+  font-size: 46px;
+  text-shadow:
+    -4px -4px 0 #f0f,
+    4px 4px 0 #0ff;
+}
+
+#map {
+  filter: invert(1) grayscale(1);
+  width: 100%;
+  height: 200px;
+  border: 0;
 }
