@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>ssh fox@10.0.2.10 (node-sysadm-01.lan)</title>
+
+  <script src="libv86.js"></script>
+  <script>
+    "use strict";
+
+    window.onload = function() {
+      new V86Starter({
+        wasm_path: "v86.wasm",
+        memory_size: 536870912,
+        vga_memory_size: 8388608,
+        screen_container: document.getElementById("screen_container"),
+        initial_state: {
+          url: 'ctf.bin.zst'
+        },
+        filesystem: {
+          baseurl: '',
+        },
+        autostart: true,
+      });
+    };
+  </script>
+  <style>
+    body {
+      background: #eee;
+    }
+    .container {
+      text-align: center;
+      margin: 50px 0;
+    }
+    .terminal {
+      margin: 0 auto;
+      border: black solid 20px;
+      border-top: 0;
+      border-radius: 10px;
+      box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+      width: max-content;
+      background: #000
+    }
+    .styled-divider {
+      border-radius: 0px 0px 10px 10px;
+      background: #777;
+      margin: 10px 20px;
+      font-family: Arial;
+      color: #fff;
+      font-size: 10px;
+      padding: 4px;
+    }
+    @font-face {
+      font-family: 'Hack';
+      src: url("../fonts/HACKED.ttf");
+    }
+    h2 {
+      font-family: 'Hack';
+    }
+    #thanks {
+      text-align: right;
+    }
+    #thanks a{
+      color: #fff;
+      font-size: 10px;
+      font-family: Arial;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="terminal">
+      <div class="styled-divider">
+        ssh fox@10.0.2.10 (node-sysadm-01.lan)
+      </div>
+      <div id="screen_container">
+        <div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
+        <canvas style="display: none"></canvas>
+      </div>
+      <div id="thanks"><a href="https://github.com/copy/v86">Powered by v86</a></div>
+    </div>
+  </div>
+</body>
+</html>
